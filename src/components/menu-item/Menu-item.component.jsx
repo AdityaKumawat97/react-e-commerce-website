@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './menu-item.styles.scss'
 export default function MenuItem({ title }) {
     return (
         <div className="menu-item">
