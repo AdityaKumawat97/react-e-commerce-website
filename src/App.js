@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Homepage from './Pages/Homepage.component'
+import Homepage from './Pages/homepage/Homepage.component'
 
 const HatsPage = () => {
   return (
