@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.styles.scss'
-import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/newLogo.svg'
 import { Link } from 'react-router-dom'
 export default function Header() {
     return (
