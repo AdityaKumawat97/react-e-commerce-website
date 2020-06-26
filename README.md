@@ -1,2 +1,3 @@
 # react-Ecommerce-website
- E commerce website with complete authentication made using React
+
+## Final documentation will be made after completion of this project
