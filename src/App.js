@@ -28,7 +28,7 @@ class App extends Component {
               ...snapshot.data()
             }
           }, ()=> {
-            console.log(this.state.currentUser)
+            console.log(this.state)
           })
         })
       }
