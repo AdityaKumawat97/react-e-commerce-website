@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { auth } from '../../firebase/firebase.utils'
 import CartIcon from '../cart-icon/Cart-icon'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
-function Header({ currentUser }) {
+function Header({ currentUser, hidden }) {
     return (
         <div className="header">
             <Link to="/" className="logo-container">
@@ -31,13 +31,17 @@ function Header({ currentUser }) {
                 }
                 <CartIcon />
             </div>
-            <CartDropdown />
+            {
+                hidden ? null : <CartDropdown />
+            }
+
         </div>
     )
 }
 
-const mapStatetoProps = state => ({
-    currentUser: state.user.currentUser
+const mapStatetoProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+    currentUser,
+    hidden
 })
 
 export default connect(mapStatetoProps)(Header)
