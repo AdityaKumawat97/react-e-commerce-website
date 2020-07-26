@@ -1,9 +1,11 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import './header.styles.scss'
 import { ReactComponent as Logo } from '../../assets/newLogo.svg'
 import { Link } from 'react-router-dom'
 import { auth } from '../../firebase/firebase.utils'
-export default function Header({ currentUser }) {
+
+function Header({ currentUser }) {
     return (
         <div className="header">
             <Link to="/" className="logo-container">
@@ -18,7 +20,7 @@ export default function Header({ currentUser }) {
                 </Link>
                 {
                     currentUser ?
-                        <div className="option" onClick={()=> auth.signOut()}>  
+                        <div className="option" onClick={() => auth.signOut()}>
                             SIGN OUT
                         </div>
                         :
@@ -31,3 +33,9 @@ export default function Header({ currentUser }) {
         </div>
     )
 }
+
+const mapStatetoProps = state => ({
+    currentUser: state.user.currentUser
+})
+
+export default connect(mapStatetoProps)(Header)
