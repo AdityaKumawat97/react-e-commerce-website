@@ -1,5 +1,5 @@
-# react-Ecommerce-website
-### Work Under Process
+# React-Ecommerce-website
+### Work Under Progress
 
 An E commerce platform made using React JS, Redux, Firebase (authentication), Firestore, Stripe API (temporarily creating dummy payment gateway)
 
