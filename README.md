@@ -23,12 +23,12 @@ The application is composed of the following Features:
 
 **Progress:**
 Current Progress: 45%
-<br>
+<br/>
 ![](src/assets/progress.png)
 
 
-<br>
-**Screenshots:**
+**SCREENSHOTS:**
+
 Landing Page:
 
 ![](src/assets/main-screen.png)
@@ -107,8 +107,6 @@ Follow the following steps to get development environment running.
   ```bash
   npm start
   ```
-
-
 ---
 
 
