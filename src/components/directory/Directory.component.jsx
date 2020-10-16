@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import MenuItem from '../menu-item/Menu-item.component'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
