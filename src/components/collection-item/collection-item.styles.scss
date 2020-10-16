@@ -18,11 +18,12 @@
   }
 
   .image {
-    width: 100%;
+    width: 22vw;
     height: 95%;
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+    overflow: hidden;
   }
   .custom-button {
     width: 80%;
