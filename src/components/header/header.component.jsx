@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '../../assets/newLogo.svg'
 import { auth } from '../../firebase/firebase.utils'
 import CartIcon from '../cart-icon/Cart-icon'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
-import { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink } from './header.styles'
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles'
 
 import { createStructuredSelector } from 'reselect'
 import { selectCartHidden } from '../../redux/cart/cart.selectors'
