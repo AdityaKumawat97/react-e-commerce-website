@@ -7,7 +7,7 @@ function CartItem({ item: { imageUrl, price, name, quantity } }) {
             <ImageHolder src={imageUrl} alt={name} />
             <ItemDetailsContainer>
                 <NameSpanner>{name}</NameSpanner>
-                <QuantitySpanner>{quantity}*${price}</QuantitySpanner>
+                <QuantitySpanner>{quantity}* ${price}</QuantitySpanner>
             </ItemDetailsContainer>
         </CartItemContainer>
     )
